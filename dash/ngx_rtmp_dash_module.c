@@ -1246,7 +1246,7 @@ ngx_rtmp_dash_cleanup_dir(ngx_str_t *ppath, ngx_msec_t playlen)
     time_t           mtime, max_age;
     u_char          *p;
     u_char           path[NGX_MAX_PATH + 1], mpd_path[NGX_MAX_PATH + 1];
-    u_char           dir_mod;
+    u_char           dir_mod = 0;
     ngx_dir_t        dir;
     ngx_err_t        err;
     ngx_str_t        name, spath, mpd;
